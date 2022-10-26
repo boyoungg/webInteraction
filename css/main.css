@@ -1,0 +1,64 @@
+body{width: 100vw; height: 3000px;}
+header{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: gray;
+    z-index: 1;
+}
+header nav{display: flex;}
+#logo{padding: 5px; margin-left: 50px; border: solid 1px red}
+#MainMenu{ border: solid 1px blue; margin-left: 1100px;}
+#MainMenu li{display: inline-block; border: solid 1px red; padding: 10px; margin: 5px 15px;color: white;}
+
+
+#section-2-deston{background-color: #CCCCCC; width: 100vw; height: 100vh;}
+#flipSection{display: flex; border: solid 1px red; position: relative; top: 25%;}
+.flip { 
+    width: 300px;
+    height: 350px;
+    perspective: 1100px;
+    margin: 10px 10px;
+    margin: 0 auto;
+}
+  
+.card {
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .8s;
+    transform-style: preserve-3d;
+}	
+  
+.front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.front {
+    background: rgb(104, 104, 104); 
+}
+  
+
+.back { 
+    background: rgb(225, 188, 65); 
+    transform: rotateY(180deg);
+    color: white;
+    text-align: center;
+    line-height: 350px;
+}
+  
+
+.flip:hover .card {
+    transform: rotateY(180deg);
+}
+
+#section-2-ServivorPass{display: flex; width: 100vw; height: 100vh;}
+.secHover{width: 20vw; height: 100vh; border: solid 1px red;}
+#section-1{background-color: rgb(139, 199, 255);}#section-2{background-color: rgb(144, 103, 255);}
+#section-3{background-color: rgb(255, 88, 185);}
+#section-4{background-color: rgb(255, 85, 85);}
+.active{width: 200vw; transition: 2s;}
+

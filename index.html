@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="./img/logo.png" width="100"></div>
+            <ul id="MainMenu">
+                <li>DESTON</li>
+                <li>NEW SERVICE</li>
+                <li>SERVIVOR PASS</li>
+                <li>MAP GUIDE</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section-1-Main" >
+        <img src="./img/background.png" alt="">
+    </section>
+    
+    <section id="section-2-deston">
+        <div id="flipSection">
+            <div class="flip">  
+                <div class="card">
+                  <div class="front"></div>
+                  <div class="back">MAP NAME</div>
+                </div>
+            </div>
+            <div class="flip">  
+                <div class="card">
+                  <div class="front"><img src="" alt=""></div>
+                  <div class="back">MAP NAME</div>
+                </div>
+            </div>
+            <div class="flip">  
+                <div class="card">
+                  <div class="front"></div>
+                  <div class="back">MAP NAME</div>
+                </div>
+            </div>
+            <div class="flip">  
+                <div class="card">
+                  <div class="front"></div>
+                  <div class="back">MAP NAME</div>
+                </div>
+            </div>
+            <div class="flip">  
+                <div class="card">
+                  <div class="front"></div>
+                  <div class="back">MAP NAME</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-2-ServivorPass">
+        <div class="secHover" id="section-1">1</div>
+        <div class="secHover" id="section-2">2</div>
+        <div class="secHover" id="section-3">3</div>
+        <div class="secHover" id="section-4">4</div>
+        <div class="secHover" id="section-5">5</div>
+    </section>
+
+
+    <script>
+        
+
+
+        $(document).ready(function(){
+            $('.secHover').hover(function(){
+                $(this).addClass('active');
+            }, function(){
+                $(this).removeClass('active');
+            });
+            
+        });
+
+
+        
+
+        
+    </script>
+
+</body>
+</html>
